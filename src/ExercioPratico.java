@@ -1,3 +1,4 @@
+//Para rodar este arquivo vá para o arquivo "RodarExercioPratico"
 import  javax.swing.*; 
 import  java.awt.*; 
 import  java.awt.event.*;
