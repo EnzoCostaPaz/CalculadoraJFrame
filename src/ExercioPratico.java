@@ -27,12 +27,12 @@ public class ExercioPratico extends JFrame{
         n1 = new JTextField(5);
         n2 = new JTextField(5);
 
-        sm = new JButton("+");
-        mn = new JButton("-");
-        vz = new JButton("*");
-        dv = new JButton("/");
+        sm = new JButton("+ (Alt+1)");
+        mn = new JButton("- (Alt+2)");
+        vz = new JButton("* (Alt+3)");
+        dv = new JButton("/ (Alt+4)");
         //Limpar, habilitar,ocultar,exibir e sair
-        limp = new JButton("Limpar");
+        limp = new JButton("Limpar (Alt+x)");
         habit = new JButton("Habilitar");
         ocult = new JButton("Ocultar");
         exib = new JButton("Exibir");
@@ -44,6 +44,7 @@ public class ExercioPratico extends JFrame{
         mn.setMnemonic(KeyEvent.VK_2);
         vz.setMnemonic(KeyEvent.VK_3);
         dv.setMnemonic(KeyEvent.VK_4);
+        limp.setMnemonic(KeyEvent.VK_X);
         //Calculos
         //soma
         sm.addActionListener(
@@ -115,6 +116,7 @@ public class ExercioPratico extends JFrame{
              public void actionPerformed(ActionEvent e){
                 n1.setText(null);
                 n2.setText(null);
+                resposta2.setText(null);
                 n1.requestFocus();
              }   
             }
@@ -174,11 +176,11 @@ public class ExercioPratico extends JFrame{
         n1.setBounds(120,10,100,20);
         n2.setBounds(120,40,100,20);
 
-        sm.setBounds(310,10,50,20);
-        mn.setBounds(310,30,50,20);
-        vz.setBounds(310,50,50,20);
-        dv.setBounds(310,70,50,20);
-        limp.setBounds(310,90,80,20);
+        sm.setBounds(310,10,100,20);
+        mn.setBounds(310,30,100,20);
+        vz.setBounds(310,50,100,20);
+        dv.setBounds(310,70,100,20);
+        limp.setBounds(310,90,115,20);
 
         habit.setBounds(20,130,140,20);
         desab.setBounds(150,130,140,20);
